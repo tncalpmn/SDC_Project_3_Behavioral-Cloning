@@ -5,3 +5,14 @@ mac_sim.app/
 TrainingData_BackUp/
 Cropped_Images/
 Cropped_Images.zip
+All_Images.zip
+All_Images/
+CrasH.mov
+model_Try1.h5
+model_Try2.h5
+my_drive.py
+trainSample.py
+.idea/
+Behavioral-Cloning-P3_Test.ipynb
+Track_1_BirdsEye.mov
+Track_2_BirdsEye.mov
