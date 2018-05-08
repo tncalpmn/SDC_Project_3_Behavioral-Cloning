@@ -83,10 +83,10 @@ Here are the layers of my modified NVIDIA network (model.py lines 58-116):
 
 
 
-| Layer         		|     Description	        					| Stride|Filter Size| Padding |
-|:---------------------:|:---------------------------------------------:|
+| Layer         		|     Description	 | Stride|Filter Size| Padding |
+|:---------------------:|:------------:|:------------:|:----------:|:-----------:|
 | Input         		| 160x323x3 RGB image   							| - | - | - |
-| Cropping         		| Crop Image 66 px from top and 22 px from bottom   							| - | - | - |
+| Cropping         		| Crop Image 66 px from top and 22 px from bottom | - | - | - |
 | Lambda    	| Normalise Inputs (pixels) by (val/127.5)-1 	|- | -|-|
 | Convolution     	| Output depth 24 	| 2x2|5x5 |Valid|
 | RELU					|						-						| -| -|-|
@@ -101,8 +101,8 @@ Here are the layers of my modified NVIDIA network (model.py lines 58-116):
 | RELU					|						-						| -| -|-|
 | Dropout					|	drop	0.5 during training 										| -| -|-|
 | Convolution     	| Output depth 64	| 3x3|1x1 |Valid|
-| RELU					|			-									| |- |-|
-| Flatten      	|-		| -| -|-|
+| RELU					|-|- |- |-|
+| Flatten      	|-	| -| -|-|
 | Fully connected		| outputs 100        									|- |- |-|
 | Dropout					|	drop	0.5 during training 										| -| -|-|
 | ELU					|				-								| -|- |-|
