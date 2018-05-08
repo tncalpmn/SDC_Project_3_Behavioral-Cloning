@@ -44,7 +44,7 @@ with open(allImagesPathRoot + "/" + "all_driving_log.csv") as csvfile:
 print("CSV logs are read local...")
 
 if limitDataSample is not -1:
-    #shuffle(allSamples)
+    shuffle(allSamples)
     allSamples = allSamples[:limitDataSample]
 print("Amount of picture from each view: left, center, right:",len(allSamples)) # All Image Information can be found allSamples
 
