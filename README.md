@@ -82,6 +82,7 @@ python drive.py model.h5
 Here are the layers of my modified NVIDIA network (model.py lines 58-116):
 
 
+
 | Layer         		|     Description	        					| Stride|Filter Size| Padding |
 |:---------------------:|:---------------------------------------------:|
 | Input         		| 160x323x3 RGB image   							| - | - | - |
@@ -111,6 +112,7 @@ Here are the layers of my modified NVIDIA network (model.py lines 58-116):
 | Fully connected		| outputs 10        									|- |- |-|
 | ELU					|				-								| -|- |-|
 | Fully connected		| outputs 1        									|- |- |-|
+
 
 This is inspired by following [architecture](https://devblogs.nvidia.com/deep-learning-self-driving-cars/):
 
